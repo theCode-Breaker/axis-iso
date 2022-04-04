@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "#################################"
-echo "Start axyl-pacman"
+echo "Start axis-pacman"
 echo "#################################"
 
 echo "Changing into our own linux.preset"
