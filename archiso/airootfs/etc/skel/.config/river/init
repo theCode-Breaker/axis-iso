@@ -197,7 +197,7 @@ riverctl csd-filter-add "emacs"
 
 gnome_schema="org.gnome.desktop.interface"
 gsettings set "$gnome_schema" gtk-theme "Catppuccin-blue"
-gsettings set "$gnome_schema" icon-theme "Tela-circle-purple"
+gsettings set "$gnome_schema" icon-theme "Papirus-Dark"
 gsettings set "$gnome_schema" cursor-theme "volantes_cursors"
 gsettings set "$gnome_schema" font-name "JetBrainsMono Nerd Font Medium 10"
 
