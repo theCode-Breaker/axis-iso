@@ -2,7 +2,12 @@ name: Build Axis ISO
 
 on:
   workflow_dispatch:
-
+     inputs:
+      dev:
+        description: "Run as development?"
+        type: boolean
+        required: true
+        default: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,8 +37,16 @@ jobs:
              mkarchiso -v -w ./work -o ./out ./archiso/
              echo "ISO Built in ./out folder!"
              
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.dev == 'true' }}
+        with:
+          name: Axis ${{ env.DATE }}
+          path: "axis-${{ env.DATE }}-x86_64.iso"  
+          
       - name: Release
         uses: "marvinpinto/action-automatic-releases@latest"
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dev == 'false') }}
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: ${{ env.DATE }}
