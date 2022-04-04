@@ -20,9 +20,4 @@ file_permissions=(
   ["/etc/sudoers.d"]="0:0:750"
   ["/root/.automated_script.sh"]="0:0:755"
   ["/usr/local/bin/choose-mirror"]="0:0:755"
-  ["/usr/local/bin/calinstall"]="0:0:755"
-  ["/usr/local/bin/calinstall-debug"]="0:0:755"
-  ["/usr/local/bin/post_install"]="0:0:755"
-  ["/usr/local/bin/chrooted_post_install"]="0:0:755"
-  ["/usr/local/bin/axyl-pacman"]="0:0:755"
 )
