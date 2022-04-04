@@ -135,11 +135,6 @@ xf86-video-intel
 xf86-video-fbdev
 xf86-video-vesa
 
-#####################
-#### Virtual Box ####
-#####################
-virtualbox-guest-utils
-
 ########################
 ##### Xorg Packages ####
 ########################
@@ -150,6 +145,7 @@ xorg-xwayland
 ###############
 alacritty
 archlinux-keyring
+calamares
 chaotic-keyring
 chaotic-mirrorlist
 bat
