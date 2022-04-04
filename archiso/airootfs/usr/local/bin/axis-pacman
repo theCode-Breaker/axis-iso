@@ -6,7 +6,7 @@ echo "#################################"
 
 echo "Changing into our own linux.preset"
 echo "#################################"
-mv /etc/mkinitcpio.d/axyl /etc/mkinitcpio.d/linux.preset
+mv /etc/mkinitcpio.d/axis /etc/mkinitcpio.d/linux.preset
 
 echo "Populate Core Team keys"
 echo "#################################"
