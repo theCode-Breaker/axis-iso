@@ -1,0 +1,32 @@
+componentName: peux
+
+welcomeStyleCalamares: true
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize:    640px,480px
+windowPlacement: center
+
+strings:
+    productName:         Peux OS
+    shortProductName:    POS
+    version:             2.1
+    shortVersion:        River
+    versionedName:       Peux OS River [ TWM Edition ]
+    shortVersionedName:  POS RIVER
+    bootloaderEntryName: Peux OS River
+    productUrl:          https://peux-os.netlify.app/
+    supportUrl:          https://t.me/peux/
+
+images:
+    productLogo:         "pos.png"
+    productIcon:         "header-icon@2.png"
+    productWelcome:      "welcome.png"
+
+slideshow:               "show.qml"
+
+slideshowAPI:            2
+
+style:
+   sidebarBackground:    "#000000"
+   sidebarText:          "#ffffff"
+   sidebarTextSelect:    "#00eeff"
